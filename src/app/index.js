@@ -1,5 +1,5 @@
 import {displayData} from "./module";
-displayData('Helo');
+displayData('Hello');
 
 import {displayName} from "./module";
 displayName('Виталий');
