@@ -1,6 +1,6 @@
 class Fio {
-    public  name: string;
-    public  family: string;
+    private  name: string;
+    private  family: string;
 
     constructor(name: string, family: string){
         this.name = name;
@@ -14,4 +14,4 @@ class Fio {
 
 let myFio = new Fio("Ушаков", "Виталий");
 // document.write(myFio.getFio());
-document.body.textContent(myFio.getFio());
+// document.body.textContent=myFio.getFio();
