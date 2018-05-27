@@ -6,20 +6,30 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: path.resolve(__dirname, './src/app/index.js')
+        main: path.resolve(__dirname, './src/app/index.ts')
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist')
     },
+    resolve: {
+        extensions: ['.ts', '.js']
+    },
     module: {
         rules: [
             {
-                test: /.less$/,
+                test: /\.less$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'less-loader'
+                ]
+            },
+            {
+                test: /\.ts$/,
+                use: 'ts-loader',
+                exclude: [
+                    'node_modules'
                 ]
             }
         ]
