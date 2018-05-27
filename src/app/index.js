@@ -1,5 +1,7 @@
+import '../styles/style.less';
 import {displayData} from "./module";
-displayData('Helo');
+import './test';
 
-import {displayName} from "./module";
-displayName('Виталий');
+displayData('Hello!!!');
+
+
