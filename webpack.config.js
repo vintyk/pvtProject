@@ -21,42 +21,53 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.less$/,
+                test: /\.sass$/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
-                    'less-loader'
+                    'sass-loader'
                 ]
             },
-            {
-                test: /\.scss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: [
-                                autoprefixer({
-                                    browsers: ['ie >= 8', 'last 2 version']
-                                })
-                            ],
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
-            },
+            // {
+            //     test: /\.less$/,
+            //     use: [
+            //         MiniCssExtractPlugin.loader,
+            //         'css-loader',
+            //         'less-loader',
+            //         'sass-loader'
+            //     ]
+            // },
+
+            // {
+            //     test: /\.sass$/,
+            //     use: [
+            //         MiniCssExtractPlugin.loader,
+            //         {
+            //             loader: 'css-loader',
+            //             options: {
+            //                 sourceMap: true
+            //             }
+            //         },
+            //         {
+            //             loader: 'postcss-loader',
+            //             options: {
+            //                 plugins: [
+            //                     autoprefixer({
+            //                         browsers: ['ie >= 8', 'last 2 version']
+            //                     })
+            //                 ],
+            //                 sourceMap: true
+            //             }
+            //         },
+            //         {
+            //             loader: 'sass-loader',
+            //             options: {
+            //                 sourceMap: true
+            //             }
+            //         }
+            //     ]
+            // },
+
             {
                 test: /\.ts$/,
                 use: 'ts-loader',
