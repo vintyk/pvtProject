@@ -1,5 +1,5 @@
-import '../styles/style.less';
+import "../styles/style.less";
 import {displayData} from "./module";
-import './test.ts';
+import "./test.ts";
 
-displayData('Hello!!!');
+displayData("Hello!!!");

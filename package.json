@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --mode development ",
     "dev": "node_modules/.bin/webpack --mode development",
-    "prod": "node_modules/.bin/webpack --mode production"
+    "prod": "node_modules/.bin/webpack --mode production",
+    "givmeinit": "node_modules/.bin/tslint --init"
   },
   "author": "",
   "license": "MIT",
@@ -28,5 +29,7 @@
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tslint": "^5.10.0"
+  }
 }
