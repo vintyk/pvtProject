@@ -13,8 +13,8 @@ greeter.start();
 import {Printer} from "./entity/Printer";
 
 const el2: HTMLElement = document.getElementById("htmlEnterPoint");
-const tag: string = "span";
-const myText: string = "РАБОТА ПРИНТЕРА";
+const tag: string = "h2";
+const myText: string = "РАБОТА ПРИНТЕРА...";
 
 const printer = new Printer(el2, tag, myText);
-const printer2 = new Printer(el2, tag, "Такие дела...");
+// const printer2 = new Printer(el2, "h1", "Такие дела...");
