@@ -12,5 +12,3 @@ export class Fio {
     // public static origin = new Fio("", "");
 }
 // let myFio = new Fio("Ушаков", "Виталий");
-// document.write(myFio.getFio());
-// document.body.textContent = myFio.getFio();
