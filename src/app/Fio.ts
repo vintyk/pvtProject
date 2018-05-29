@@ -1,4 +1,4 @@
-class Fio {
+export class Fio {
     private  name: string;
     private  family: string;
 
@@ -9,9 +9,8 @@ class Fio {
     public getFio(): string {
         return (this.name + " " + this.family);
     }
-    static origin = new Fio("", "");
+    // public static origin = new Fio("", "");
 }
-
-let myFio = new Fio("Ушаков", "Виталий");
+// let myFio = new Fio("Ушаков", "Виталий");
 // document.write(myFio.getFio());
-// document.body.textContent=myFio.getFio();
+// document.body.textContent = myFio.getFio();

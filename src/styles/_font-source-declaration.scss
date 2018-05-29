@@ -23,42 +23,6 @@ $asset-pipeline: false !default;
     ttf:   "#{$file-path}.ttf"
   );
 
-  @each $key, $values in $formats-map {
-    @if ($file-formats, $key) {
-      $file-path: nth($values, 1);
-      $font-format: nth($values, 2);
-
-      @if $asset-pipeline == true {
-        $src: append($src, $font-url($file-path) $font-format, comma);
-      } @else {
-        $src: append($src, url($file-path) $font-format, comma);
-      }
-    }
-  }
-
   @return $src;
 }
-@mixin font-face(
-  $font-family,
-  $file-path,
-  $weight: normal,
-  $style: normal,
-  $asset-pipeline: $asset-pipeline,
-  $file-formats: eot woff2 woff ttf svg) {
 
-  $font-url-prefix: font-url-prefixer($asset-pipeline);
-
-  @font-face {
-    font-family: $font-family;
-    font-style: $style;
-    font-weight: $weight;
-
-    src: font-source-declaration(
-                    $font-family,
-                    $file-path,
-                    $asset-pipeline,
-                    $file-formats,
-                    $font-url-prefix
-    );
-  }
-}
