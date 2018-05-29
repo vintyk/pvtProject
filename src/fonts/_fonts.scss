@@ -1,0 +1,65 @@
+//@include font-face(
+//  'Source Sans Pro',
+//  './',
+//  300,
+//  normal,
+//  eot woff2 woff ttf
+//);
+
+@include font-face(
+                'Source Sans Pro',
+                '#{$font-path}/sourcesanspro-light-webfont',
+                300,
+                normal,
+        $file-formats: eot woff2 woff ttf
+);
+
+//
+//@font-face(
+//  'Source Sans Pro',
+//  './',
+//  300,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Source Sans Pro',
+//  400,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Source Sans Pro',
+//  400,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Source Sans Pro',
+//  700,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Merriweather',
+//  300,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Merriweather',
+//  400,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Merriweather',
+//  400,
+//  $file-formats: eot woff2 woff ttf
+//);
+//
+//@font-face(
+//  'Merriweather',
+//  700,
+//  $file-formats: eot woff2 woff ttf
+//);
