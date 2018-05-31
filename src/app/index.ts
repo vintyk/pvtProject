@@ -1,16 +1,13 @@
 // import "../styles/style.less_";
 import "../styles/style.sass";
-
 import "./entity/Fio.ts";
-import "./entity/Greeter.ts";
 
 import {Greeter} from "./entity/Greeter";
+import {Printer} from "./entity/Printer";
 
 const el: HTMLElement = document.getElementById("content");
 const greeter = new Greeter(el);
 greeter.start();
-
-import {Printer} from "./entity/Printer";
 
 const el2: HTMLElement = document.getElementById("htmlEnterPoint");
 const tag: string = "h2";
